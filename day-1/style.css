@@ -1,0 +1,60 @@
+body {
+    margin:0;
+    font-family :sans_sarif;
+}
+
+body > haeder{
+    padding :16px;
+    justify-content : space-between;
+    background-color:blue
+}
+
+body> header>h1{
+    padding-left:16px;
+    color:white;
+   
+
+}
+
+body>header>nav>ul{
+    margin:0;
+    height:100%;
+    align-items: center;
+    list-style:none;
+    display:flex;
+
+}
+body>header>nav>ul>li>a{
+    padding-right:8px;
+    color:white;
+}
+body> main{
+    margin:auto;
+    width:60%;
+    display:flex;
+}
+
+body > main >article> footer{
+    margin:16px 0;
+    display:flex;
+}
+body>footer {
+    padding:32px;
+    background-color: blue;
+    color:white;
+}
+#footer-container{
+    display:flex;
+}
+#footer-container>section{
+    padding-right:32px;
+}
+#footer-container>section>nav>ul{
+    margin:0;
+    list-style:none;
+}
+#footer-container >section>nav>ul>li>a{
+    padding-right:8px;
+
+
+}

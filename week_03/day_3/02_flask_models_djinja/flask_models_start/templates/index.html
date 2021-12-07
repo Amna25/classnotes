@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+    
+
+        <h1>My Todo List</h1>
+
+        <form action="/tasks" method="post">
+            <label for ="title">Title</label>
+            <input type="text" name="title" id="title">
+            <br>
+            <label for="description">description</label>
+            <textarea name="description" id="description" cols="30" rows="2"></textarea>
+            <br>
+            <input type="submit" value="Add task">
+    
+
+         </form>
+
+        {% for task in tasks %}
+        <div>
+            <h2>{{task.title}}</h2>
+            <p><b> {{task.description}}</b>
+                {% if task.done %}
+             {% for item in items %} 
+    <div>
+    <div class=""></div>
+{% endfor %}
+                
+            {% endif %}
+            </p>
+        </div>
+        {% endfor %}
+        {% endblock %}
+   
